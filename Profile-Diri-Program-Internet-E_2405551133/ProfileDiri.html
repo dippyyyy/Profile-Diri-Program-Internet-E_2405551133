@@ -87,15 +87,25 @@
 
       img {
         width: 150px;
+        height: 150px;
+        object-fit: cover;
         border-radius: 50%;
         display: block;
         margin: 10px auto;
+        border: 3px solid white;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.05);
       }
 
       table {
         width: 100%;
         border-collapse: collapse;
       }
+
       th,
       td {
         border: 1px solid #000;
@@ -109,6 +119,7 @@
         padding: 10px;
         margin: 5px 0;
       }
+
       form button {
         background: #004080;
         color: white;
@@ -117,6 +128,7 @@
         cursor: pointer;
         border-radius: 5px;
       }
+
       form button:hover {
         background: #0066cc;
       }
@@ -134,11 +146,13 @@
             "main"
             "footer";
         }
+
         nav {
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: center;
         }
+
         section {
           flex: 1 1 100%;
         }
